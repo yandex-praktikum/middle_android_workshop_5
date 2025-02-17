@@ -40,14 +40,9 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
             }
 
             dependencies {
-                add("implementation", project(":core:analytics"))
-
                 add("implementation", library("androidx.hilt.navigation.compose"))
                 add("implementation", platform(library("androidx.compose.bom")))
                 add("implementation", library("androidx.material3"))
-
-                add("implementation", library("hilt.android"))
-                add("ksp", library("hilt.compiler"))
             }
         }
     }
