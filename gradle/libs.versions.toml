@@ -47,3 +47,4 @@ hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hiltAndro
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 
 workshop-android-feature = { id = "workshop.android.feature", version = "unspecified" }
+workshop-core = { id = "workshop.core", version = "unspecified" }

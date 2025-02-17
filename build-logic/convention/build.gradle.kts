@@ -23,6 +23,12 @@ dependencies {
 
 gradlePlugin {
     plugins {
+        register("core") {
+            id = libs.plugins.workshop.core.get().pluginId
+            implementationClass = "CoreConventionPlugin"
+        }
+    }
+    plugins {
         register("androidFeature") {
             id = libs.plugins.workshop.android.feature.get().pluginId
             implementationClass = "AndroidFeatureConventionPlugin"
